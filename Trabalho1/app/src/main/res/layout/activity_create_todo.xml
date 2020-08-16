@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateTodoActivity"
+        tools:deviceIds="wear"
+        android:padding="@dimen/box_inset_layout_padding">
+
+    <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/toggleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="68dp"
+            android:textOff="@string/toggle_button_status_off" android:textOn="@string/toggle_button_status_on"
+            app:layout_constraintStart_toEndOf="@+id/txtStatus" app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtTitle" android:layout_marginTop="4dp"/>
+    <TextView
+            android:text="@string/toggle_button_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtStatus"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtTitle"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtTitle"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            android:text="@string/text_input_title_todo" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTxtTitle" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+            android:hint="@string/text_input_title_todo_hint" android:importantForAutofill="no"/>
+    <TextView
+            android:text="@string/text_lbl_hide_than"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtHideThan"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtStatus"
+            android:layout_marginTop="20dp" android:layout_marginStart="16dp"/>
+    <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/autoCompleteParticipants"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtParticipant"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:labelFor="@+id/txtParticipant"
+            android:hint="@string/txt_participants_hint"/>
+    <TextView
+            android:text="@string/text_lbl_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtRepeat"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/hideYet"
+            android:layout_marginTop="16dp"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/spnRepeat"
+            app:layout_constraintTop_toBottomOf="@+id/txtRepeat" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:spinnerMode="dropdown"/>
+    <TextView
+            android:text="@string/text_lbl_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtPriority"
+            app:layout_constraintTop_toBottomOf="@+id/spnRepeat" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp" android:layout_marginStart="16dp"/>
+    <!--https://stacktips.com/tutorials/android/android-radio-button-example-->
+    <RadioGroup
+            android:id="@+id/radioGroupPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/spnRepeat" app:layout_constraintStart_toEndOf="@+id/txtPriority"
+            android:layout_marginStart="16dp" android:layout_marginTop="8dp">
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/highPriority" tools:layout_editor_absoluteY="323dp"
+                tools:layout_editor_absoluteX="96dp" android:buttonTint="#FF0000" android:text="@string/high"/>
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/normalPriority" tools:layout_editor_absoluteY="323dp"
+                tools:layout_editor_absoluteX="96dp" android:buttonTint="#0000FF" android:text="@string/normal"/>
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lowPriority" tools:layout_editor_absoluteY="323dp"
+                tools:layout_editor_absoluteX="96dp" android:buttonTint="#DDDDDD" android:text="@string/low"/>
+
+    </RadioGroup>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/hideYet"
+            app:layout_constraintEnd_toEndOf="parent" android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/txtHideThan"
+            android:layout_marginTop="12dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.08" android:textSize="18sp" android:textAlignment="center"/>
+    <TextView
+            android:text="@string/txt_lbl_paticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtParticipant"
+            app:layout_constraintTop_toBottomOf="@+id/txtPriority"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

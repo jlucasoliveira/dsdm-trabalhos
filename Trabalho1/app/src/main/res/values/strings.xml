@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Trabalho 1 (Todo app)</string>
+    <string name="toggle_button_status_text">Status</string>
+    <string name="toggle_button_status_on">Feito</string>
+    <string name="toggle_button_status_off">À Fazer</string>
+    <string name="text_input_title_todo">Título</string>
+    <string name="text_input_title_todo_hint">e.g Fazer compras</string>
+    <string name="text_lbl_hide_than">Ocultar até</string>
+    <string name="txt_participants_hint">e.g. Aang</string>
+    <string name="text_lbl_repeat">Repetir</string>
+    <string name="text_lbl_priority">Prioridade</string>
+    <string name="high">Alta</string>
+    <string name="normal">Normal</string>
+    <string name="low">Baixa</string>
+    <string name="settings">Configurações</string>
+    <string name="add_todo">Adicionar TODO</string>
+    <string name="txt_play_sound">Tocar música</string>
+    <string name="txt_stop_sound">Parar música</string>
+    <string name="header_done_todo">Tarefas feitas</string>
+    <string name="header_ongoing_todo">Tarefas a fazer</string>
+    <string name="txt_lbl_paticipants">Participantes</string>
+</resources>
