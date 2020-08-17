@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Trabalho2</string>
+    <string name="lblIdTxtInput">ID</string>
+    <string name="IdHintEditTxt">1</string>
+    <string name="btnCancel">Cancelar</string>
+    <string name="btnSave">Salvar</string>
+    <string name="lblCarModel">Modelo</string>
+    <string name="txtHintCarModel">Palio</string>
+    <string name="lblCarBrand">Marca</string>
+    <string name="txtHintCarBrand">Fiat</string>
+    <string name="lblCarColor">Cor</string>
+    <string name="txtHintCarColor">Lilás</string>
+    <string name="lblPubYear">Ano de Lançamento</string>
+    <string name="txtHintPubYear">2006</string>
+</resources>
