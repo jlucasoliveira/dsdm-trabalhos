@@ -49,12 +49,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickEditButton(View view) {
-        if (editText.getText().toString().equals("")) {
+        String entrada = editText.getText().toString();
+        if (entrada.equals("") || !isNumber(entrada)) {
             Toast.makeText(this, "Insira uma ID", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        Integer id = Integer.parseInt(editText.getText().toString());
+        Integer id = Integer.parseInt(entrada);
         Carro editableCarro = null;
 
         for (Carro carro : carros)
@@ -112,6 +113,16 @@ public class MainActivity extends AppCompatActivity {
           Toast.makeText(this, "Algo de errado não está certo", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    private Boolean isNumber(String entrada) {
+        if (entrada.length() == 0) return false;
+        int i = 0;
+        while ( i  < entrada.length()) {
+            if (entrada.charAt(i) < '0' || entrada.charAt(i) > '9') return false;
+            i++;
+        }
+        return true;
     }
 
 }
