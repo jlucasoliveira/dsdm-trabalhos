@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Chat app</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="name">Nome</string>
+    <string name="login">Entrar</string>
+    <string name="signup">Criar conta</string>
+    <string name="signup_title">Crie sua conta!</string>
+    <string name="email_hint">jao@exemplo.br</string>
+    <string name="name_hint">João Ninguém</string>
+    <string name="go_back">Voltar</string>
+    <string name="exit">Sair</string>
+    <string name="add_member">Adicionar Membro</string>
+    <string name="add_group">Criar Grupo</string>
+    <string name="members">Membros</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1074595731790",
+    "firebase_url": "https://mobile-trab-3.firebaseio.com",
+    "project_id": "mobile-trab-3",
+    "storage_bucket": "mobile-trab-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074595731790:android:5513cc2a2fdb754e64661f",
+        "android_client_info": {
+          "package_name": "br.ufc.quixada.dsdm.trabalho4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074595731790-5rdq9v78hf39if7qoqcmngqkjmlovsl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfVmmBpMr9HzZHs41919BJ3Vh36pSBs8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074595731790-5rdq9v78hf39if7qoqcmngqkjmlovsl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
